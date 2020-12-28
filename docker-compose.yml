@@ -3,17 +3,20 @@ version: "2.2"
 services:
   db:
     image: mysql:5.7
-    # ports:
-    #   - '3306:3306'
+    ports:
+      - '3306:3306'
+    # restart: always  
+    
     environment:
-      - MYSQL_DATABASE=mayurtest
-      - MYSQL_USER=rootmayur
-      - MYSQL_PASSWORD=rootmayur
-      - MYSQL_ROOT_USER=rootmayur
-      - MYSQL_ROOT_PASSWORD=rootmayur
+      - MYSQL_DATABASE=mysql
+      - MYSQL_USER=mysql
+      - MYSQL_PASSWORD=mysql
+      - MYSQL_ROOT_PASSWORD=some_password
+      - MYSQL_ROOT_HOST=%
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
+    # restart: always
     ports:
       - "8000:8000"
     depends_on:
