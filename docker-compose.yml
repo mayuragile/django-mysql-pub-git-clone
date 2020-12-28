@@ -6,10 +6,11 @@ services:
     # ports:
     #   - '3306:3306'
     environment:
-      - MYSQL_DATABASE=mysql
-      - MYSQL_USER=mysql
-      - MYSQL_PASSWORD=mysql
-      - MYSQL_ROOT_PASSWORD=some_password
+      - MYSQL_DATABASE=mayurtest
+      - MYSQL_USER=rootmayur
+      - MYSQL_PASSWORD=rootmayur
+      - MYSQL_ROOT_USER=rootmayur
+      - MYSQL_ROOT_PASSWORD=rootmayur
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
