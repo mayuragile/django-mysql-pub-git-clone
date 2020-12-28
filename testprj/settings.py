@@ -76,7 +76,7 @@ DATABASES = {
         'USER': 'testuser',
         'PASSWORD': 'testpassword',
         'HOST': 'db',
-        'PORT': 3306,
+        'PORT': 3307,
         'OPTIONS': {
             # Tell MySQLdb to connect with 'utf8mb4' character set
             'charset': 'utf8mb4',
