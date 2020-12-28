@@ -4,9 +4,9 @@ services:
   db:
     image: mysql:8
     environment:
-      - POSTGRES_DB=mysql
-      - POSTGRES_USER=mysql
-      - POSTGRES_PASSWORD=mysql
+      - MYSQL_DB=mysql
+      - MYSQL_USER=mysql
+      - MYSQL_PASSWORD=mysql
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
