@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'testprj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my-app-db',
+        'NAME': 'my-app-db1',
         'USER': 'root',
         'PASSWORD': 'password',
         'HOST': 'db',
