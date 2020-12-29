@@ -83,20 +83,20 @@ WSGI_APPLICATION = 'testprj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
-        'USER': 'mysql22',
-        'PASSWORD': 'mysql22',
+        'NAME': 'my-app-db',
+        'USER': 'root',
+        'PASSWORD': 'password',
         'HOST': 'db',
         'PORT': 3306,
-        'OPTIONS': {
-            # Tell MySQLdb to connect with 'utf8mb4' character set
-            'charset': 'utf8mb4',
-        },
-#         # Tell Django to build the (mysql named db) database with the 'utf8mb4' character set
-        'test': {
-            'CHARSET': 'utf8mb4',
-            'COLLATION': 'utf8mb4_unicode_ci',
-        }
+#         'OPTIONS': {
+#             # Tell MySQLdb to connect with 'utf8mb4' character set
+#             'charset': 'utf8mb4',
+#         },
+# #         # Tell Django to build the (mysql named db) database with the 'utf8mb4' character set
+#         'test': {
+#             'CHARSET': 'utf8mb4',
+#             'COLLATION': 'utf8mb4_unicode_ci',
+#         }
 
     }
 }
