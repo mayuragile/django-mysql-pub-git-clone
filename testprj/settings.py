@@ -72,17 +72,17 @@ WSGI_APPLICATION = 'testprj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my-app-db10',
+        'NAME': 'djangodocker_db',
         'USER': 'root',
-        'PASSWORD': 'password',
+        'PASSWORD': 'root',
         'HOST': 'db',
         'PORT': 3306,
-        'CHARSET': 'utf8',
-        'COLLATION': 'utf8_bin',
-        'OPTIONS': {
-            'use_unicode' : True,
-            'init_command': 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
-        },
+#         'CHARSET': 'utf8',
+#         'COLLATION': 'utf8_bin',
+#         'OPTIONS': {
+#             'use_unicode' : True,
+#             'init_command': 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+#         },
     }
 }
 
