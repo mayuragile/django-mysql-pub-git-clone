@@ -72,9 +72,9 @@ WSGI_APPLICATION = 'testprj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
-        'USER': 'testuser',
-        'PASSWORD': 'testpassword',
+        'NAME': 'mysql',
+        'USER': 'mysql',
+        'PASSWORD': 'mysql',
         'HOST': 'db',
         'PORT': 3306,
         'OPTIONS': {
@@ -82,7 +82,7 @@ DATABASES = {
             'charset': 'utf8mb4',
         },
 #         # Tell Django to build the (mysql named db) database with the 'utf8mb4' character set
-        'test': {
+        'mysql': {
             'CHARSET': 'utf8mb4',
             'COLLATION': 'utf8mb4_unicode_ci',
         }
