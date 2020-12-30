@@ -75,7 +75,7 @@ DATABASES = {
         'NAME': 'djangodocker_db',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': '192.168.1.199',
+        'HOST': 'db',
         'PORT': 3306,
 #         'CHARSET': 'utf8',
 #         'COLLATION': 'utf8_bin',
